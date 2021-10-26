@@ -214,9 +214,6 @@ theme.
     margin: 0;
     font-family: "Poppins";
   }
-  h1, h2, h3{
-    color: white !important;
-  }
   .ei-scrollup {
     width: 55px;
     right: 20px;
@@ -11055,7 +11052,7 @@ Sticky Menu
 }
 
 .str-main-header .str-main-menu-item .str-main-navigation {
-  background-color: #010004;
+  background-color: #c49840;
 }
 
 .str-main-header .str-main-menu-item .str-main-navigation li a {
@@ -11181,9 +11178,9 @@ Sticky Menu
 .str-sticky-menu {
   top: -40px;
   z-index: 9;
-  position: fixed;
+  /* position: fixed; */
   padding: 10px 0px 15px;
-  background-color: #010101;
+  background-color: #c49840;
   animation-duration: 0.7s;
   animation-fill-mode: both;
   animation-name: fadeInDown;
@@ -11455,7 +11452,7 @@ Sticky Menu
 }
 
 .str-feature-section .str-feature-icon-text:hover {
-  background-color: #010004;
+  background-color: #c49840;
 }
 
 .str-feature-section .str-feature-icon-text:hover .str-feature-icon {
@@ -11579,7 +11576,7 @@ Sticky Menu
 /*abiut area*/
 /*----------------------------------------------------*/
 .str-about-section {
-  background-color: #000000;
+  background-color: #edf2f9;
   padding: 115px 0px 110px;
 }
 
@@ -12278,6 +12275,7 @@ Sticky Menu
 .str-partner-section {
   padding: 50px 0px 65px;
   text-align: center;
+  background-color: #c49840;
 }
 
 .str-partner-area .owl-nav {
@@ -12312,7 +12310,6 @@ Sticky Menu
   content: "";
   height: 100%;
   position: absolute;
-  background-color: #b8c7e3;
 }
 
 .str-newslatter-content .str-mail-icon {
@@ -12957,7 +12954,7 @@ Sticky Menu
   padding: 15px 0;
   font-size: 14px;
   font-family: "Poppins";
-  background-color: #010101;
+  background-color: #c49840;
 }
 
 .str-footer-area .str-copywright-text a {
@@ -16547,8 +16544,6 @@ SaaSio - HR Management
 /*----------------------------------------------------*/
 .pm-feature-section {
   padding-bottom: 100px;
-  background-color: black !important;
-  color: white !important;
 }
 .pm-feature-section .pm-section-title {
   margin: 0 auto;
@@ -17667,9 +17662,6 @@ SaaSio - HR Management
 /*---------------------------------------------------- */
 
 /*****Inner Page Style****/
-.sa-contact-inner-section{
-  background-color: #1d1919 !important;
-}
 .inner-page-padding {
   padding: 100px 0px;
 }
@@ -17708,4 +17700,22 @@ SaaSio - HR Management
 }
 .sa-contact-inner-btn {
   width: 100%;
+}
+
+
+
+
+
+button.accordion {
+	background-color: #e4bc6d !important;
+}
+
+button.accordion:hover,
+button.accordion.is-open {
+	background-color: rgb(68, 68, 68);
+}
+.accordion-content {
+	background-color: rgb(230, 230, 230) !important;
+	border-left: 1px solid rgb(230, 230, 230) !important;
+	border-right: 1px solid rgb(230, 230, 230) !important;
 }
