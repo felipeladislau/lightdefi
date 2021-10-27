@@ -11181,7 +11181,7 @@ Sticky Menu
 .str-sticky-menu {
   top: -40px;
   z-index: 9;
-  position: fixed;
+  /* position: fixed; */
   padding: 10px 0px 15px;
   background-color: #010101;
   animation-duration: 0.7s;
