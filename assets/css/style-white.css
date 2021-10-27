@@ -5399,6 +5399,11 @@ Sticky Menu
 /*---------------------------------------------------- */
 /*footer area*/
 /*----------------------------------------------------*/
+.str-footer-area{
+  background-image: none !important;
+  background-color: #edf2f9 !important;
+  padding-top: 20px;
+}
 .appseo-footer-area-section {
   padding: 120px 0px 110px;
 }

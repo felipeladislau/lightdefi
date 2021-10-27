@@ -12800,6 +12800,11 @@ Sticky Menu
 /*---------------------------------------------------- */
 /*Footer area*/
 /*----------------------------------------------------*/
+.str-footer-area{
+  background-image: url(../img/new/banners_site_lightdefiRODAPÉ.png);
+  background-size: cover;
+  padding-top: 20px;
+}
 .str-footer-area .footer-content {
   padding-bottom: 80px;
 }
