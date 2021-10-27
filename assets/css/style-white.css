@@ -13283,7 +13283,11 @@ Sticky Menu
   }
 
   .str-about-section {
-    padding: 50px 0px;
+    padding: 0px 0px;
+  }
+
+  .str-about-text{
+    padding-bottom: 30px;
   }
 
   .str-about-section .str-about-feature-area {

@@ -27,12 +27,6 @@
       </script>
       <!-- End Google Tag Manager -->
 
-
-      <style>
-
-      </style>
-
-
       <?php
          if($_GET['mode'] == 'l'){
             echo '<link rel="stylesheet" href="assets/css/style-white.css"></head><body class="str-home" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">';
@@ -50,13 +44,13 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <!-- The social media icon bar -->
       <div class="icon-bar">
-         <a href="https://www.instagram.com/light_defi/" target="_blank" class="google"><i class="fa fa-instagram"></i></a>
-         <a href="https://www.facebook.com/Light.DeFi" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+         <a href="https://www.instagram.com/light_defi/" target="_blank" class="google"><i style="color: white !important;" class="fa fa-instagram"></i></a>
+         <a href="https://www.facebook.com/Light.DeFi" target="_blank" class="facebook"><i style="color: white !important;" class="fa fa-facebook"></i></a>
          <a href="https://t.me/grupolight" target="_blank" class="facebook"><i class="fa fa-telegram"></i></a>
-         <a href="https://www.linkedin.com/company/lightdefi/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
-         <a href="https://www.youtube.com/channel/UC4Hsr-EEQ6X2xB7Wf46YaIQ" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
-         <a href="https://twitter.com/light_defi" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-         <a href="https://www.reddit.com/user/grupolight/" target="_blank" class="google"><i class="fa fa-reddit"></i></a>
+         <a href="https://www.linkedin.com/company/lightdefi/" target="_blank" class="linkedin"><i style="color: white !important;" class="fa fa-linkedin"></i></a>
+         <a href="https://www.youtube.com/channel/UC4Hsr-EEQ6X2xB7Wf46YaIQ" target="_blank" class="youtube"><i style="color: white !important;" class="fa fa-youtube"></i></a>
+         <a href="https://twitter.com/light_defi" target="_blank" class="twitter"><i style="color: white !important;" class="fa fa-twitter"></i></a>
+         <a href="https://www.reddit.com/r/lightdefi/" target="_blank" class="google"><i style="color: white !important;" class="fa fa-reddit"></i></a>
       </div>
       <!-- Start HEADER E MENU
          ============================================= -->
@@ -144,7 +138,7 @@
                        </div>
                        <div class="stats-item">
                            <div class="stats-label">Holders</div>
-                           <div class="stats-value circulatingSupply">21,956 addresses</div>
+                           <div class="stats-value circulatingSupply">22,092 addresses</div>
                        </div>
                        <div class="stats-item">
                            <div class="stats-label">FULLY DILUTED MARKET CAP</div>
@@ -168,10 +162,6 @@
                <br><br>
             </div>
          </div>
-
-
-         
-
       <!-- End BANNER PRINCIPAL
          ============================================= -->
 
@@ -182,26 +172,54 @@
       <section id="str-partner" class="str-partner-section" style="display: block !important;">
          <div class="container">
                <div class="row">
-                  <div class="col-12 col-sm-6 col-md-3 col-lg-3" style="margin-bottom: 25px;">
-                     <a>
-                     <img src="assets/img/new/banners_site_lightdefi2LOGOS-1.png" alt="">
-                     </a>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-3 col-lg-3" style="margin-bottom: 25px;">
-                     <a>
-                     <img src="assets/img/new/banners_site_lightdefi2LOGOS-2.png" alt="">
-                     </a>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-3 col-lg-3" style="margin-bottom: 25px;">
-                     <a>
-                     <img src="assets/img/new/banners_site_lightdefi2LOGOS-3.png" alt="">
-                     </a>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-3 col-lg-3" style="margin-bottom: 25px;">
-                     <a>
-                     <img src="assets/img/new/banners_site_lightdefi2LOGOS-4.png" alt="">
-                     </a>
-                  </div>
+
+               <?php
+                  if($_GET['mode'] == 'l'){
+                     echo '<div class="col-12 col-sm-6 col-md-3 col-lg-3" style="margin-bottom: 25px;">
+                                 <a>
+                                 <img src="assets/img/light-img/banners_site_lightdefi2LOGOS-1.png" alt="">
+                                 </a>
+                              </div>
+                              <div class="col-12 col-sm-6 col-md-3 col-lg-3" style="margin-bottom: 25px;">
+                                 <a>
+                                 <img src="assets/img/light-img/banners_site_lightdefi2LOGOS-2.png" alt="">
+                                 </a>
+                              </div>
+                              <div class="col-12 col-sm-6 col-md-3 col-lg-3" style="margin-bottom: 25px;">
+                                 <a>
+                                 <img src="assets/img/light-img/banners_site_lightdefi2LOGOS-3.png" alt="">
+                                 </a>
+                              </div>
+                              <div class="col-12 col-sm-6 col-md-3 col-lg-3" style="margin-bottom: 25px;">
+                                 <a>
+                                 <img src="assets/img/light-img/banners_site_lightdefi2LOGOS-4.png" alt="">
+                                 </a>
+                              </div>';
+                  }else{
+                     echo '<div class="col-12 col-sm-6 col-md-3 col-lg-3" style="margin-bottom: 25px;">
+                           <a>
+                           <img src="assets/img/new/banners_site_lightdefi2LOGOS-1.png" alt="">
+                           </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-3" style="margin-bottom: 25px;">
+                           <a>
+                           <img src="assets/img/new/banners_site_lightdefi2LOGOS-2.png" alt="">
+                           </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-3" style="margin-bottom: 25px;">
+                           <a>
+                           <img src="assets/img/new/banners_site_lightdefi2LOGOS-3.png" alt="">
+                           </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-3" style="margin-bottom: 25px;">
+                           <a>
+                           <img src="assets/img/new/banners_site_lightdefi2LOGOS-4.png" alt="">
+                           </a>
+                        </div>';                  }
+               ?>
+                  
+
+
                </div>
          </div>
       </section>
@@ -250,7 +268,16 @@
                <h1 style="text-align: center;">CERTIFICATES</h1>
                <div class="str-newslatter-form position-relative">
                   <div class="nws-button  text-capitalize" style="left: 0px; text-align: center;">
-                     <br><a href="https://www.certik.org/projects/lightdefi" target="_blank"><img src="assets/img/certik-logotype-h-w.svg" alt="" style="max-width: 200px;"></a>
+                     <br>
+                     <a href="https://www.certik.org/projects/lightdefi" target="_blank">
+                        <?php
+                        if($_GET['mode'] == 'l'){
+                           echo '<img src="assets/img/light-img/banners_site_lightdefi2CERTIK.png" alt="" style="max-width: 200px;">';
+                        }else{
+                           echo '<img src="assets/img/certik-logotype-h-w.svg" alt="" style="max-width: 200px;">';
+                        }
+                        ?>
+                     </a>
                   </div>
                </div>
             </div>
@@ -498,7 +525,14 @@
                                  <div class="str-progress-area str-headline" style="max-width: 100% !important;">
                                     <h2>Transactional purchase and sale fees:
                                     </h2>
-                                    <img src="assets/img/new/lightdefiGRAFICO.png" alt="" class="img-fluid">
+                                    <?php
+                                       if($_GET['mode'] == 'l'){
+                                          echo '<img src="assets/img/light-img/lightdefiGRAFICO.png" alt="" class="img-fluid">';
+                                       }else{
+                                          echo '<img src="assets/img/new/lightdefiGRAFICO.png" alt="" class="img-fluid">';
+                                       }
+                                    ?>
+                                    
                                  </div>
                               </div>
                            </div>
