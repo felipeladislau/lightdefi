@@ -28,11 +28,16 @@
       <!-- End Google Tag Manager -->
 
 
+      <style>
+
+      </style>
+
+
       <?php
          if($_GET['mode'] == 'l'){
-            echo '<link rel="stylesheet" href="assets/css/style-white.css"></head><body class="str-home str-home">';
+            echo '<link rel="stylesheet" href="assets/css/style-white.css"></head><body class="str-home" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">';
          }else{
-            echo '<link rel="stylesheet" href="assets/css/style.css"><body class="str-home dark-version">';
+            echo '<link rel="stylesheet" href="assets/css/style.css"><body class="str-home dark-version" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">';
          }
       ?>
    
@@ -52,13 +57,6 @@
          <a href="https://www.youtube.com/channel/UC4Hsr-EEQ6X2xB7Wf46YaIQ" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
          <a href="https://twitter.com/light_defi" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
          <a href="https://www.reddit.com/user/grupolight/" target="_blank" class="google"><i class="fa fa-reddit"></i></a>
-         <?php
-            if($_GET['mode'] == 'l'){
-               echo '<a href="index.php?mode=d" class="google"><i class="fas fa-adjust"></i></a>';
-            }else{
-               echo '<a href="index.php?mode=l" class="google"><i class="fas fa-adjust"></i></a>';
-            }
-         ?>
       </div>
       <!-- Start HEADER E MENU
          ============================================= -->
@@ -73,49 +71,33 @@
                         </div>
                      </div>
                      <div class="col-md-10">
-                        <div class="str-main-menu-item clearfix float-right">
-                           <nav class="str-main-navigation  clearfix ul-li">
-                              <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
-                                 <li><a href="#mercado">About</a> </li>
-                                 <li><a href="#comprarPix">Buy Light Defi</a></li>
-                                 <li><a href="/docs/lightdelfi_whitepaper_english.pdf" target="_blank">WhitePaper</a></li>
-                                 <li><a href="#str_tokenomics">Tokenomics</a></li>
-                                 <li><a href="https://www.lightdefi.org/blog/" target="_blank">Blog</a></li>
-                                 <li><a href="https://www.certik.org/projects/lightdefi" target="_blank">Certik</a></li>
-                              </ul>
-                           </nav>
-                        </div>
+                           <!-- desktop-menu -->
+                           <div class="topnav" id="myTopnav">
+                              <a class="active" href="index.php">Home</a> 
+                              <a href="#mercado">About</a>
+                              <a href="#comprarPix">Buy Light Defi</a>
+                              <a href="/docs/lightdelfi_whitepaper_english.pdf" target="_blank">WhitePaper</a>
+                              <a href="#str_tokenomics">Tokenomics</a>
+                              <a href="https://www.lightdefi.org/blog/" target="_blank">Blog</a>
+                              <a href="https://www.certik.org/projects/lightdefi" target="_blank">Certik</a>
+
+                              <?php
+                                 if($_GET['mode'] == 'l'){
+                                    echo '<a href="index.php?mode=d" class="google"><i class="fas fa-lightbulb"></i></a>';
+                                 }else{
+                                    echo '<a href="index.php?mode=l" class="google"><i class="far fa-lightbulb"></i></a>';
+                                 }
+                              ?>
+
+                              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                              <i class="fa fa-bars"></i>
+                              </a>
+                           </div>
                      </div>
                   </div>
                </div>
             </div>
-            <!-- desktop-menu -->
-            <div class="str-mobile_menu relative-position">
-                    <div class="str-mobile_menu_button str-open_mobile_menu">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                    <div class="str-mobile_menu_wrap str-mobile_menu_wrap">
-                        <div class="mobile_menu_overlay str-open_mobile_menu"></div>
-                        <div class="str-mobile_menu_content">
-                            <div class="str-mobile_menu_close str-open_mobile_menu">
-                                <img src="assets/img/startup/logo/cls.png" alt="">
-                            </div>
-                            <div class="m-brand-logo text-center">
-                                <a href="!#"><img src="assets/img/startup/logo/logo1.png" alt=""></a>
-                            </div>
-                            <nav class="str-mobile-main-navigation  clearfix ul-li">
-                                <ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
-                                 <li><a href="#mercado">About</a> </li>
-                                 <li><a href="#comprarPix">Buy Light Defi</a></li>
-                                 <li><a href="/docs/lightdelfi_whitepaper_english.pdf" target="_blank">WhitePaper</a></li>
-                                 <li><a href="#str_tokenomics">Tokenomics</a></li>
-                                 <li><a href="https://www.lightdefi.org/blog/" target="_blank">Blog</a></li>
-                                 <li><a href="https://www.certik.org/projects/lightdefi" target="_blank">Certik</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+            
          </div>
       </header>
       <!-- End HEADER E MENU
@@ -1103,7 +1085,7 @@
             <div class="footer-content">
                <div class="row">
                   <div class="col-lg-4">
-                     <div class="str-footer-widget str-headline pera-content">
+                     <div class="str-footer-widget str-headline pera-content" style="text-align: center;">
                         <div class="str-ft-about-widget">
                            <a  href="#"><img style="max-width: 100px;" src="assets/img/new/logo.png" alt=""></a>
                            <p>
@@ -1118,33 +1100,13 @@
                   <div class="col-lg-4">
                      <div class="str-footer-widget str-headline pera-content">
                         <div class="str-office-widget">
-                           <h3 class="str-widget-title">Site map</h3>
+                           <h3 class="str-widget-title" style="text-align: center;">Site map</h3>
                            <ul>
-                              <li>
-                                 <a  target="_blank" href="docs/PRIVACYPOLICE.pdf">
-                                 Privacy Policy 
-                                 </a>
-                              </li>
-                              <li>
-                                 <a  target="_blank" href="docs/INFORMATIONABOUTCOOKIES.pdf">
-                                 Information about Cookies 
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#str-team">
-                                 Our team
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#str-work-process">
-                                 FAQ
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#sa-contact-inner">
-                                 Contact
-                                 </a>
-                              </li>
+                              <li><a  target="_blank" href="docs/PRIVACYPOLICE.pdf">Privacy Policy</a></li>
+                              <li><a  target="_blank" href="docs/INFORMATIONABOUTCOOKIES.pdf">Information about Cookies </a></li>
+                              <li><a href="#str-team">Our team</a></li>
+                              <li><a href="#str-work-process">FAQ</a></li>
+                              <li><a href="#sa-contact-inner">Contact</a></li>
                            </ul>
                         </div>
                      </div>
@@ -1152,7 +1114,7 @@
                   <div class="col-lg-4">
                      <div class="str-footer-widget str-headline pera-content">
                         <div class="str-office-widget">
-                           <h3 class="str-widget-title">Site map</h3>
+                           <h3 class="str-widget-title" style="text-align: center;">Menu</h3>
                            <ul>
                               <li><a href="#mercado">About</a> </li>
                               <li><a href="#comprarPix">Buy Light Defi</a></li>
@@ -1233,6 +1195,16 @@
          function abrePanc(){
              document.getElementById("videopix").innerHTML = '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9wx51rhJh24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
          }
+
+         function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+               x.className += " responsive";
+            } else {
+               x.className = "topnav";
+            }
+         }
+
       </script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-209074956-1"></script>
