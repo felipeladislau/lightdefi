@@ -73,8 +73,7 @@
                      <div class="col-md-10">
                            <!-- desktop-menu -->
                            <div class="topnav" id="myTopnav">
-                              <a class="active" href="index.php">Home</a> 
-                              <a href="#mercado">About</a>
+                              <a class="active" href="index.php">Home</a>
                               <a href="#comprarPix">Buy Light Defi</a>
                               <a href="/docs/lightdelfi_whitepaper_english.pdf" target="_blank">WhitePaper</a>
                               <a href="#str_tokenomics">Tokenomics</a>
@@ -83,9 +82,9 @@
 
                               <?php
                                  if($_GET['mode'] == 'l'){
-                                    echo '<a href="index.php?mode=d" class="google"><i class="fas fa-lightbulb"></i></a>';
+                                    echo '<a href="index.php?mode=d" class="google"><i class="fas fa-moon"></i></a>';
                                  }else{
-                                    echo '<a href="index.php?mode=l" class="google"><i class="far fa-lightbulb"></i></a>';
+                                    echo '<a href="index.php?mode=l" class="google"><i class="fas fa-sun"></i></a>';
                                  }
                               ?>
 
@@ -161,7 +160,7 @@
 
             <div class="container">
                <br>
-               <h1 style="color: white;">Join this crypto revolution.</h1><br>
+               <h1>Join this crypto revolution.</h1><br>
                <h3>Light DeFi is a crypto asset created on the BSC (Binance SmartChain) to revolutionize the renewable energy sector building photovoltaic plants, gathering the concepts of sustainability and Decentralized Finances (DeFi).
                </h3>
                <br>
@@ -1116,7 +1115,6 @@
                         <div class="str-office-widget">
                            <h3 class="str-widget-title" style="text-align: center;">Menu</h3>
                            <ul>
-                              <li><a href="#mercado">About</a> </li>
                               <li><a href="#comprarPix">Buy Light Defi</a></li>
                               <li><a href="/docs/lightdelfi_whitepaper_english.pdf" target="_blank">WhitePaper</a></li>
                               <li><a href="#str_tokenomics">Tokenomics</a></li>

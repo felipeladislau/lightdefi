@@ -17764,6 +17764,9 @@ SaaSio - HR Management
 	float: right;
 	display: block;
  }
+ .topnav a.active {
+  display: none;
+ }
  }
 
  @media screen and (max-width: 600px) {
@@ -17779,3 +17782,151 @@ SaaSio - HR Management
 	text-align: left;
  }
  }
+
+
+
+
+
+ /***************** ESTILOS DA PARTE DE CIMA DOS TOKENS ************************/
+
+.section-stats {
+	margin-top: 16px
+}
+
+.section-stats .stats-list {
+	display: grid;
+	gap: 16px;
+	grid-template-columns: repeat(2, 1fr)
+}
+
+@media (min-width:1000px) {
+	.section-stats .stats-list {
+		grid-template-columns: repeat(4, 1fr);
+		margin: 0 28px;
+		position: relative
+	}
+	.section-stats .stats-list:before {
+		background-size: contain;
+		bottom: -30px;
+		content: "";
+		display: block;
+		height: 83px;
+		left: calc(50% - 15px);
+		position: absolute;
+		transform: translateX(-50%);
+		width: 83px;
+		z-index: -1
+	}
+}
+
+.section-stats .stats-list .stats-item {
+	align-items: center;
+	background: #675021;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 6px
+}
+
+.section-stats .stats-list .stats-item .stats-label {
+	font-size: 12px;
+	line-height: 15px;
+	opacity: .5
+}
+
+.section-stats .stats-list .stats-item .stats-value {
+	color: hsla(0, 0%, 100%, .7);
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 17px;
+	margin-top: 2px
+}
+
+.section-stats .stats-list {
+	display: grid;
+	gap: 16px;
+	grid-template-columns: repeat(2, 1fr)
+}
+
+@media (min-width:1000px) {
+	.section-stats .stats-list {
+		grid-template-columns: repeat(4, 1fr);
+		margin: 0 28px;
+		position: relative
+	}
+	.section-stats .stats-list:before {
+		background-size: contain;
+		bottom: -30px;
+		content: "";
+		display: block;
+		height: 83px;
+		left: calc(50% - 15px);
+		position: absolute;
+		transform: translateX(-50%);
+		width: 83px;
+		z-index: -1
+	}
+}
+
+.section-stats .stats-list .stats-item {
+	align-items: center;
+	background: #675021;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 6px
+}
+
+.section-stats .stats-list .stats-item .stats-label {
+	font-size: 12px;
+	line-height: 15px;
+	opacity: .5
+}
+
+.section-stats .stats-list .stats-item .stats-value {
+	color: hsla(0, 0%, 100%, .7);
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 17px;
+	margin-top: 2px
+}
+
+.section-stats .stats-list .stats-item {
+	align-items: center;
+	background: #67502185;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 6px
+}
+
+.section-stats .stats-list .stats-item .stats-label {
+	font-size: 12px;
+	line-height: 15px;
+	opacity: .5
+}
+
+.section-stats .stats-list .stats-item .stats-value {
+	color: hsla(0, 0%, 100%, .7);
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 17px;
+	margin-top: 2px
+}
+
+.section-stats .stats-list .stats-item .stats-label {
+	font-size: 12px;
+	line-height: 15px;
+	opacity: .5
+}
+
+.section-stats .stats-list .stats-item .stats-value {
+	color: hsla(0, 0%, 100%, .7);
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 17px;
+	margin-top: 2px
+}
