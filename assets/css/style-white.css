@@ -5426,6 +5426,10 @@ Sticky Menu
   padding-bottom: 35px;
 }
 
+.str-brand-logo{
+  text-align: center;
+}
+
 .appseo-footer-widget .footer-logo-widget .appseo-footer-logo {
   margin-bottom: 20px;
 }

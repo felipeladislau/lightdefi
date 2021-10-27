@@ -4,8 +4,8 @@
       <meta charset="UTF-8">
       <title>Light DeFi</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="shortcut icon" href="assets/img/new/logo.png" type="image/x-icon">
-      <link rel="icon" href="assets/img/new/logo.png" type="image/x-icon">
+      <link rel="shortcut icon" href="assets/img/favicon-light.png" type="image/x-icon">
+      <link rel="icon" href="assets/img/favicon-light.png" type="image/x-icon">
       <link rel="stylesheet" href="assets/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/css/fontawesome-all.css">
       <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
@@ -30,7 +30,7 @@
 
       <?php
          if($_GET['mode'] == 'l'){
-            echo '<link rel="stylesheet" href="assets/css/style-white.css"></head><body class="str-home">';
+            echo '<link rel="stylesheet" href="assets/css/style-white.css"></head><body class="str-home str-home">';
          }else{
             echo '<link rel="stylesheet" href="assets/css/style.css"><body class="str-home dark-version">';
          }
@@ -90,6 +90,32 @@
                </div>
             </div>
             <!-- desktop-menu -->
+            <div class="str-mobile_menu relative-position">
+                    <div class="str-mobile_menu_button str-open_mobile_menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="str-mobile_menu_wrap str-mobile_menu_wrap">
+                        <div class="mobile_menu_overlay str-open_mobile_menu"></div>
+                        <div class="str-mobile_menu_content">
+                            <div class="str-mobile_menu_close str-open_mobile_menu">
+                                <img src="assets/img/startup/logo/cls.png" alt="">
+                            </div>
+                            <div class="m-brand-logo text-center">
+                                <a href="!#"><img src="assets/img/startup/logo/logo1.png" alt=""></a>
+                            </div>
+                            <nav class="str-mobile-main-navigation  clearfix ul-li">
+                                <ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
+                                 <li><a href="#mercado">About</a> </li>
+                                 <li><a href="#comprarPix">Buy Light Defi</a></li>
+                                 <li><a href="/docs/lightdelfi_whitepaper_english.pdf" target="_blank">WhitePaper</a></li>
+                                 <li><a href="#str_tokenomics">Tokenomics</a></li>
+                                 <li><a href="https://www.lightdefi.org/blog/" target="_blank">Blog</a></li>
+                                 <li><a href="https://www.certik.org/projects/lightdefi" target="_blank">Certik</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
          </div>
       </header>
       <!-- End HEADER E MENU
@@ -104,14 +130,14 @@
             <section id="join" class="section section-token-info">
                <div class="container" style="    max-width: 1140px;">
                   <div class="wrapper aos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
-                     <div class="token-info-shadow">Name: Light Defi</div>
+                     <div class="token-info-shadow">Name: Light DeFi</div>
                      <div class="token-info-shadow">Ticker: LIGHT</div>
                      <!-- <div class="token-info">Token info</div> -->
                   </div>
-                  <div class="wrapper aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                  <!-- <div class="wrapper aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                      <div class="info-value">Total supply</div>
                      <div class="info-label">10.000.000.000</div>
-                  </div>
+                  </div> -->
                   <div class="wrapper aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                      <div class="info-value copy" data-clipboard-text="0x842668e2b9a73240abf6532dedc89c9c3e050c98" data-success="copied to clipboard">
                         <i onclick="copy('0x842668e2b9a73240abf6532dedc89c9c3e050c98')" class="copy-icon"></i>
@@ -1076,7 +1102,7 @@
          <div class="container">
             <div class="footer-content">
                <div class="row">
-                  <div class="col-lg-6">
+                  <div class="col-lg-4">
                      <div class="str-footer-widget str-headline pera-content">
                         <div class="str-ft-about-widget">
                            <a  href="#"><img style="max-width: 100px;" src="assets/img/new/logo.png" alt=""></a>
@@ -1089,7 +1115,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-4">
                      <div class="str-footer-widget str-headline pera-content">
                         <div class="str-office-widget">
                            <h3 class="str-widget-title">Site map</h3>
@@ -1119,6 +1145,22 @@
                                  Contact
                                  </a>
                               </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="str-footer-widget str-headline pera-content">
+                        <div class="str-office-widget">
+                           <h3 class="str-widget-title">Site map</h3>
+                           <ul>
+                              <li><a href="#mercado">About</a> </li>
+                              <li><a href="#comprarPix">Buy Light Defi</a></li>
+                              <li><a href="/docs/lightdelfi_whitepaper_english.pdf" target="_blank">WhitePaper</a></li>
+                              <li><a href="#str_tokenomics">Tokenomics</a></li>
+                              <li><a href="https://www.lightdefi.org/blog/" target="_blank">Blog</a></li>
+                              <li><a href="https://www.certik.org/projects/lightdefi" target="_blank">Certik</a></li>
+
                            </ul>
                         </div>
                      </div>
